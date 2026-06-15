@@ -70,7 +70,7 @@ export default function Conditions() {
                 </div>
                 <div>
                   <h3 className="text-2xl font-bold text-[#0F172A] font-[family-name:var(--font-outfit)]">
-                    Orthopaedic Conditions
+                    Orthopedic Conditions
                   </h3>
                   <p className="text-sm text-gray-500">Joint, Bone, and Muscle disorders</p>
                 </div>
