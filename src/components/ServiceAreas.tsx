@@ -13,12 +13,12 @@ const areas = {
   bangalore: {
     title: 'Bangalore',
     isPrimary: false,
-    tags: ['Koramangala', 'Indiranagar', 'Whitefield', 'Electronic City', 'HSR Layout', 'Jayanagar', 'Marathahalli', 'Bellandur'],
+    tags: ['Koramangala', 'Indiranagar', 'Whitefield', 'Electronic City', 'HSR Layout', 'Jayanagar', 'Marathahalli', 'Bellandur', 'Silk Board', 'BTM Layout'],
   },
   andhraPradesh: {
     title: 'Andhra Pradesh',
     isPrimary: false,
-    tags: ['Vijayawada', 'Visakhapatnam', 'Guntur', 'Tirupati', 'Nellore', 'Kurnool', 'Rajahmundry', 'Kakinada'],
+    tags: ['Vijayawada', 'Visakhapatnam', 'Guntur', 'Tirupati', 'Nellore', 'Kurnool', 'Rajahmundry', 'Kakinada', 'Kadapa', 'Proddatur', 'Ongole'],
   },
 };
 
