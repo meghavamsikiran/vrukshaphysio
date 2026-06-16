@@ -67,10 +67,10 @@ export default function Testimonials() {
   const current = testimonials[index];
 
   return (
-    <section id="testimonials" className="py-20 md:py-28 bg-white border-t border-[#EFEBE2]">
+    <section id="testimonials" className="py-20 md:py-28 bg-white border-t border-[#E2EDF3]">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div className="mb-12">
-          <span className="inline-block px-4 py-1.5 bg-[#124C40]/5 text-[#124C40] rounded-full text-xs font-bold uppercase tracking-widest font-sans mb-4">
+          <span className="inline-block px-4 py-1.5 bg-[#008BA3]/5 text-[#008BA3] rounded-full text-xs font-bold uppercase tracking-widest font-sans mb-4">
             Success Stories
           </span>
           <h2 className="section-title teal-underline-center">What Our Patients Say</h2>
@@ -80,7 +80,7 @@ export default function Testimonials() {
         </div>
 
         {/* Carousel Container */}
-        <div className="relative bg-[#FAF7F2]/60 rounded-3xl p-8 md:p-12 border border-[#EFEBE2] min-h-[300px] flex flex-col justify-between overflow-hidden shadow-sm">
+        <div className="relative bg-[#F4F9FC]/60 rounded-3xl p-8 md:p-12 border border-[#E2EDF3] min-h-[300px] flex flex-col justify-between overflow-hidden shadow-sm">
           {/* Quote Icon */}
           <div className="absolute top-6 left-6 text-[#C5A880]/10">
             <Quote className="w-20 h-20 rotate-180 opacity-60 shrink-0" />
@@ -95,13 +95,13 @@ export default function Testimonials() {
             </div>
 
             {/* Testimonial text */}
-            <p className="text-[#0B2C24] text-lg md:text-xl italic leading-relaxed mb-8 font-heading">
+            <p className="text-[#004F95] text-lg md:text-xl italic leading-relaxed mb-8 font-heading">
               &ldquo;{current.quote}&rdquo;
             </p>
 
             {/* Profile detail */}
             <div>
-              <h4 className="text-base font-bold text-[#0B2C24] font-sans uppercase tracking-wider">
+              <h4 className="text-base font-bold text-[#004F95] font-sans uppercase tracking-wider">
                 {current.name}
               </h4>
               <p className="text-xs text-[#C5A880] font-bold uppercase tracking-widest mt-1">
@@ -111,10 +111,10 @@ export default function Testimonials() {
           </div>
 
           {/* Navigation Controls */}
-          <div className="flex items-center justify-between mt-8 relative z-10 border-t border-[#EFEBE2] pt-6">
+          <div className="flex items-center justify-between mt-8 relative z-10 border-t border-[#E2EDF3] pt-6">
             <button
               onClick={handlePrev}
-              className="p-2.5 rounded-full border border-[#EFEBE2] text-[#124C40] hover:bg-[#0B2C24] hover:text-[#FAF7F2] hover:border-[#0B2C24] transition-colors"
+              className="p-2.5 rounded-full border border-[#E2EDF3] text-[#008BA3] hover:bg-[#004F95] hover:text-[#F4F9FC] hover:border-[#004F95] transition-colors"
               aria-label="Previous story"
             >
               <ChevronLeft className="w-4 h-4" />
@@ -127,7 +127,7 @@ export default function Testimonials() {
                   key={i}
                   onClick={() => setIndex(i)}
                   className={`w-1.5 h-1.5 rounded-full transition-all duration-300 ${
-                    i === index ? 'w-5 bg-[#0B2C24]' : 'bg-[#EFEBE2]'
+                    i === index ? 'w-5 bg-[#004F95]' : 'bg-[#E2EDF3]'
                   }`}
                   aria-label={`Go to slide ${i + 1}`}
                 />
@@ -136,7 +136,7 @@ export default function Testimonials() {
 
             <button
               onClick={handleNext}
-              className="p-2.5 rounded-full border border-[#EFEBE2] text-[#124C40] hover:bg-[#0B2C24] hover:text-[#FAF7F2] hover:border-[#0B2C24] transition-colors"
+              className="p-2.5 rounded-full border border-[#E2EDF3] text-[#008BA3] hover:bg-[#004F95] hover:text-[#F4F9FC] hover:border-[#004F95] transition-colors"
               aria-label="Next story"
             >
               <ChevronRight className="w-4 h-4" />

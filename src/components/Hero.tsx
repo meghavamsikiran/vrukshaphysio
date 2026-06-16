@@ -32,10 +32,10 @@ export default function Hero() {
   };
 
   return (
-    <section id="home" className="relative min-h-screen flex items-center pt-28 pb-16 overflow-hidden bg-[#FAF7F2]">
+    <section id="home" className="relative min-h-screen flex items-center pt-28 pb-16 overflow-hidden bg-[#F4F9FC]">
       {/* Background elegant accents */}
       <div className="absolute top-0 right-0 w-[40%] h-[70%] bg-gradient-to-bl from-[#C5A880]/5 to-transparent rounded-full blur-3xl pointer-events-none"></div>
-      <div className="absolute bottom-0 left-0 w-[30%] h-[50%] bg-gradient-to-tr from-[#124C40]/5 to-transparent rounded-full blur-3xl pointer-events-none"></div>
+      <div className="absolute bottom-0 left-0 w-[30%] h-[50%] bg-gradient-to-tr from-[#008BA3]/5 to-transparent rounded-full blur-3xl pointer-events-none"></div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
@@ -48,9 +48,9 @@ export default function Hero() {
             className="lg:col-span-7 space-y-8 text-left"
           >
             {/* Premium Badge */}
-            <motion.div variants={itemVariants} className="inline-flex items-center gap-2 px-4 py-1.5 bg-[#124C40]/5 border border-[#124C40]/10 rounded-full">
+            <motion.div variants={itemVariants} className="inline-flex items-center gap-2 px-4 py-1.5 bg-[#008BA3]/5 border border-[#008BA3]/10 rounded-full">
               <span className="w-2 h-2 rounded-full bg-[#C5A880] animate-pulse"></span>
-              <span className="text-[#124C40] text-xs font-bold uppercase tracking-widest font-sans">
+              <span className="text-[#008BA3] text-xs font-bold uppercase tracking-widest font-sans">
                 Premium Homecare Physiotherapy
               </span>
             </motion.div>
@@ -58,7 +58,7 @@ export default function Hero() {
             {/* Headline */}
             <motion.h1
               variants={itemVariants}
-              className="text-4xl sm:text-5xl md:text-6xl font-normal text-[#0B2C24] leading-tight font-heading"
+              className="text-4xl sm:text-5xl md:text-6xl font-normal text-[#004F95] leading-tight font-heading"
             >
               Physiotherapy Care <br />
               <span className="italic font-normal text-[#C5A880]">
@@ -69,7 +69,7 @@ export default function Hero() {
             {/* Subheadline */}
             <motion.p
               variants={itemVariants}
-              className="text-lg text-[#5A847B] leading-relaxed max-w-xl font-sans"
+              className="text-lg text-[#0FA3B1] leading-relaxed max-w-xl font-sans"
             >
               Experience professional, evidence-based rehabilitation in the comfort of your home. Led by Bramha Reddy Gadikota (BPT) across Hyderabad, Bangalore, and Andhra Pradesh.
             </motion.p>
@@ -82,7 +82,7 @@ export default function Hero() {
               {highlights.map((item) => (
                 <div
                   key={item}
-                  className="flex items-center gap-3 text-[#0B2C24]"
+                  className="flex items-center gap-3 text-[#004F95]"
                 >
                   <div className="w-5 h-5 rounded-full bg-[#C5A880]/15 flex items-center justify-center shrink-0">
                     <CheckCircle2 className="w-3.5 h-3.5 text-[#C5A880]" />
@@ -108,7 +108,7 @@ export default function Hero() {
               </a>
               <a
                 href={CALL_URL}
-                className="inline-flex items-center justify-center gap-3 px-8 py-4 border border-[#0B2C24] text-[#0B2C24] rounded-full font-bold uppercase tracking-wider text-xs hover:bg-[#0B2C24] hover:text-[#FAF7F2] transition-all duration-300 hover:-translate-y-0.5"
+                className="inline-flex items-center justify-center gap-3 px-8 py-4 border border-[#004F95] text-[#004F95] rounded-full font-bold uppercase tracking-wider text-xs hover:bg-[#004F95] hover:text-[#F4F9FC] transition-all duration-300 hover:-translate-y-0.5"
               >
                 <Phone className="w-4 h-4" />
                 Call Now
@@ -127,21 +127,21 @@ export default function Hero() {
             <div className="absolute inset-0 border border-[#C5A880]/40 rounded-3xl translate-x-4 translate-y-4 pointer-events-none z-0"></div>
             
             {/* Main Image Container */}
-            <div className="relative w-full aspect-[4/5] sm:aspect-[3/4] lg:aspect-[4/5] max-w-md rounded-3xl overflow-hidden shadow-2xl bg-white border border-[#EFEBE2] z-10">
+            <div className="relative w-full aspect-[4/5] sm:aspect-[3/4] lg:aspect-[4/5] max-w-md rounded-3xl overflow-hidden shadow-2xl bg-white border border-[#E2EDF3] z-10">
               <img
                 src="/images/hero.png"
                 alt="Physiotherapist treating patient at home"
                 className="w-full h-full object-cover"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#0B2C24]/40 via-transparent to-transparent"></div>
+              <div className="absolute inset-0 bg-gradient-to-t from-[#004F95]/40 via-transparent to-transparent"></div>
               
               {/* Trust Tag overlay */}
-              <div className="absolute bottom-6 left-6 right-6 p-5 rounded-2xl bg-[#FAF7F2]/95 backdrop-blur-md border border-white/80 shadow-lg flex items-center gap-4 text-[#0B2C24]">
-                <div className="w-10 h-10 rounded-xl bg-[#0B2C24] flex items-center justify-center shrink-0">
+              <div className="absolute bottom-6 left-6 right-6 p-5 rounded-2xl bg-[#F4F9FC]/95 backdrop-blur-md border border-white/80 shadow-lg flex items-center gap-4 text-[#004F95]">
+                <div className="w-10 h-10 rounded-xl bg-[#004F95] flex items-center justify-center shrink-0">
                   <CheckCircle2 className="w-5 h-5 text-[#C5A880]" />
                 </div>
                 <div>
-                  <p className="text-[10px] uppercase font-bold tracking-widest text-[#5A847B]">Trusted Care</p>
+                  <p className="text-[10px] uppercase font-bold tracking-widest text-[#0FA3B1]">Trusted Care</p>
                   <p className="text-base font-bold font-sans">1000+ Happy Patients</p>
                 </div>
               </div>

@@ -51,10 +51,10 @@ export default function HomeVisitProcess() {
   };
 
   return (
-    <section id="process" className="py-20 md:py-28 bg-[#0B2C24] text-white relative overflow-hidden" ref={ref}>
+    <section id="process" className="py-20 md:py-28 bg-[#004F95] text-white relative overflow-hidden" ref={ref}>
       {/* Decorative gradient blur */}
       <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-[#C5A880]/10 rounded-full blur-3xl -z-10"></div>
-      <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-[#124C40]/25 rounded-full blur-3xl -z-10"></div>
+      <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-[#008BA3]/25 rounded-full blur-3xl -z-10"></div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-20">
@@ -90,7 +90,7 @@ export default function HomeVisitProcess() {
                 )}
 
                 {/* Number Badge */}
-                <div className="w-8 h-8 rounded-full bg-[#C5A880] flex items-center justify-center text-[#0B2C24] text-xs font-bold mb-6 relative z-10">
+                <div className="w-8 h-8 rounded-full bg-[#C5A880] flex items-center justify-center text-[#004F95] text-xs font-bold mb-6 relative z-10">
                   {step.number}
                 </div>
 

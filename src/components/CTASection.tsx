@@ -10,7 +10,7 @@ export default function CTASection() {
   const isInView = useInView(ref, { once: true, margin: '-100px' });
 
   return (
-    <section id="cta" className="py-20 md:py-28 bg-[#FAF7F2] relative overflow-hidden border-t border-[#EFEBE2]" ref={ref}>
+    <section id="cta" className="py-20 md:py-28 bg-[#F4F9FC] relative overflow-hidden border-t border-[#E2EDF3]" ref={ref}>
       <div className="absolute top-0 right-0 w-[40%] h-[100%] bg-gradient-to-bl from-[#C5A880]/5 to-transparent rounded-full blur-3xl pointer-events-none"></div>
 
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
@@ -18,7 +18,7 @@ export default function CTASection() {
           initial={{ opacity: 0, scale: 0.95 }}
           animate={isInView ? { opacity: 1, scale: 1 } : {}}
           transition={{ duration: 0.8, ease: 'easeOut' as const }}
-          className="bg-gradient-to-br from-[#0B2C24] via-[#124C40] to-[#5A847B] rounded-3xl p-8 md:p-16 shadow-xl relative overflow-hidden border border-[#C5A880]/20"
+          className="bg-gradient-to-br from-[#004F95] via-[#008BA3] to-[#0FA3B1] rounded-3xl p-8 md:p-16 shadow-xl relative overflow-hidden border border-[#C5A880]/20"
         >
           {/* Glass overlay */}
           <div className="absolute inset-0 bg-black/5 backdrop-blur-[2px] z-0"></div>
@@ -43,7 +43,7 @@ export default function CTASection() {
               </a>
               <a
                 href={CALL_URL}
-                className="inline-flex items-center justify-center gap-3 px-8 py-4 bg-white text-[#0B2C24] rounded-full font-bold uppercase tracking-wider text-xs hover:bg-[#FAF7F2] transition-all duration-300 shadow-xl"
+                className="inline-flex items-center justify-center gap-3 px-8 py-4 bg-white text-[#004F95] rounded-full font-bold uppercase tracking-wider text-xs hover:bg-[#F4F9FC] transition-all duration-300 shadow-xl"
               >
                 <Phone className="w-4 h-4" />
                 Call Now: +91 93816 82898

@@ -29,17 +29,17 @@ export default function About() {
           
           {/* Content Area */}
           <div className="lg:col-span-7">
-            <span className="inline-block px-4 py-1.5 bg-[#124C40]/5 text-[#124C40] rounded-full text-xs font-bold uppercase tracking-widest font-sans mb-4">
+            <span className="inline-block px-4 py-1.5 bg-[#008BA3]/5 text-[#008BA3] rounded-full text-xs font-bold uppercase tracking-widest font-sans mb-4">
               Who We Are
             </span>
-            <h2 className="section-title text-[#0B2C24] teal-underline">
+            <h2 className="section-title text-[#004F95] teal-underline">
               About VRUKSHA PHYSIO
             </h2>
 
-            <div className="mt-8 space-y-6 text-[#5A847B] leading-relaxed text-sm font-medium">
+            <div className="mt-8 space-y-6 text-[#0FA3B1] leading-relaxed text-sm font-medium">
               <p>
                 VRUKSHA PHYSIO Homecare Services is led by{' '}
-                <strong className="text-[#0B2C24]">Bramha Reddy Gadikota (BPT)</strong> and a team
+                <strong className="text-[#004F95]">Bramha Reddy Gadikota (BPT)</strong> and a team
                 of dedicated physiotherapy professionals committed to delivering expert physiotherapy care directly at patients&apos; homes.
               </p>
               <p>
@@ -51,29 +51,29 @@ export default function About() {
             </div>
 
             {/* Quick Stats Grid */}
-            <div className="mt-10 grid grid-cols-3 gap-4 border-t border-b border-[#EFEBE2] py-6">
+            <div className="mt-10 grid grid-cols-3 gap-4 border-t border-b border-[#E2EDF3] py-6">
               <div className="flex flex-col items-center text-center">
                 <Users className="w-6 h-6 text-[#C5A880] mb-2" />
-                <span className="text-xl font-bold text-[#0B2C24] font-sans">
+                <span className="text-xl font-bold text-[#004F95] font-sans">
                   1000+
                 </span>
-                <span className="text-[10px] text-[#5A847B] font-bold uppercase tracking-wider">Patients Treated</span>
+                <span className="text-[10px] text-[#0FA3B1] font-bold uppercase tracking-wider">Patients Treated</span>
               </div>
 
-              <div className="flex flex-col items-center text-center border-l border-r border-[#EFEBE2] px-2">
+              <div className="flex flex-col items-center text-center border-l border-r border-[#E2EDF3] px-2">
                 <Award className="w-6 h-6 text-[#C5A880] mb-2" />
-                <span className="text-xl font-bold text-[#0B2C24] font-sans">
+                <span className="text-xl font-bold text-[#004F95] font-sans">
                   5+
                 </span>
-                <span className="text-[10px] text-[#5A847B] font-bold uppercase tracking-wider">Years Exp</span>
+                <span className="text-[10px] text-[#0FA3B1] font-bold uppercase tracking-wider">Years Exp</span>
               </div>
 
               <div className="flex flex-col items-center text-center">
                 <MapPin className="w-6 h-6 text-[#C5A880] mb-2" />
-                <span className="text-xl font-bold text-[#0B2C24] font-sans">
+                <span className="text-xl font-bold text-[#004F95] font-sans">
                   3
                 </span>
-                <span className="text-[10px] text-[#5A847B] font-bold uppercase tracking-wider">Regions Served</span>
+                <span className="text-[10px] text-[#0FA3B1] font-bold uppercase tracking-wider">Regions Served</span>
               </div>
             </div>
 
@@ -94,13 +94,13 @@ export default function About() {
           {/* Equipment Showcase Area */}
           <div className="lg:col-span-5 space-y-6">
             <div className="relative">
-              <div className="absolute -inset-4 rounded-3xl bg-gradient-to-tr from-[#124C40] to-[#C5A880] opacity-5 blur-lg"></div>
-              <div className="relative bg-[#FAF7F2] border border-[#EFEBE2] rounded-3xl p-6 shadow-sm">
-                <h3 className="text-base font-normal text-[#0B2C24] mb-4 font-heading border-b border-[#EFEBE2]/60 pb-3 uppercase tracking-wider">
+              <div className="absolute -inset-4 rounded-3xl bg-gradient-to-tr from-[#008BA3] to-[#C5A880] opacity-5 blur-lg"></div>
+              <div className="relative bg-[#F4F9FC] border border-[#E2EDF3] rounded-3xl p-6 shadow-sm">
+                <h3 className="text-base font-normal text-[#004F95] mb-4 font-heading border-b border-[#E2EDF3]/60 pb-3 uppercase tracking-wider">
                   Electro Therapeutic Modalities
                 </h3>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                  <div className="relative rounded-2xl overflow-hidden shadow-sm h-36 bg-white border border-[#EFEBE2] group">
+                  <div className="relative rounded-2xl overflow-hidden shadow-sm h-36 bg-white border border-[#E2EDF3] group">
                     <img
                       src="/images/equipment-1.png"
                       alt="Electro Therapeutic Device - Multi-Stim"
@@ -110,7 +110,7 @@ export default function About() {
                       <span className="text-[10px] text-white font-bold uppercase tracking-wider">Electro Therapeutic Devices</span>
                     </div>
                   </div>
-                  <div className="relative rounded-2xl overflow-hidden shadow-sm h-36 bg-white border border-[#EFEBE2] group">
+                  <div className="relative rounded-2xl overflow-hidden shadow-sm h-36 bg-white border border-[#E2EDF3] group">
                     <img
                       src="/images/equipment-2.png"
                       alt="Electro Therapeutic Device - Ultrasound"
@@ -121,7 +121,7 @@ export default function About() {
                     </div>
                   </div>
                 </div>
-                <p className="text-xs text-[#5A847B] mt-4 leading-relaxed font-medium">
+                <p className="text-xs text-[#0FA3B1] mt-4 leading-relaxed font-medium">
                   We use advanced electro-therapeutic modalities to target deep tissues, accelerate recovery, and provide immediate pain relief.
                 </p>
               </div>
@@ -130,12 +130,12 @@ export default function About() {
         </div>
 
         {/* Team Sub-Section */}
-        <div className="border-t border-[#EFEBE2] pt-16">
+        <div className="border-t border-[#E2EDF3] pt-16">
           <div className="text-center mb-12">
             <span className="inline-block px-4 py-1.5 bg-[#C5A880]/10 text-[#C5A880] rounded-full text-xs font-bold uppercase tracking-widest font-sans mb-3">
               Our Clinical Leadership
             </span>
-            <h3 className="text-2xl md:text-4xl font-normal font-heading text-[#0B2C24]">
+            <h3 className="text-2xl md:text-4xl font-normal font-heading text-[#004F95]">
               Meet Our Expert Physiotherapists
             </h3>
           </div>
@@ -144,11 +144,11 @@ export default function About() {
             {team.map((member) => (
               <div
                 key={member.name}
-                className="bg-[#FAF7F2]/50 border border-[#EFEBE2] rounded-3xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 group flex flex-col h-full justify-between"
+                className="bg-[#F4F9FC]/50 border border-[#E2EDF3] rounded-3xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 group flex flex-col h-full justify-between"
               >
                 <div>
                   {/* Photo */}
-                  <div className="relative h-[520px] overflow-hidden bg-white border-b border-[#EFEBE2]">
+                  <div className="relative h-[520px] overflow-hidden bg-white border-b border-[#E2EDF3]">
                     <img
                       src={member.image}
                       alt={`${member.name} (${member.degree})`}
@@ -163,19 +163,19 @@ export default function About() {
                   {/* Name and Role Section */}
                   <div className="p-6 bg-white">
                     <div className="flex items-center gap-2 mb-1.5">
-                      <h4 className="text-lg font-normal font-heading text-[#0B2C24]">
+                      <h4 className="text-lg font-normal font-heading text-[#004F95]">
                         {member.name}
                       </h4>
                       <span className="bg-[#C5A880]/15 text-[#C5A880] text-[10px] font-bold px-2 py-0.5 rounded-full uppercase tracking-wider shrink-0">
                         {member.degree}
                       </span>
                     </div>
-                    <p className="text-xs text-[#5A847B] font-semibold">{member.role}</p>
+                    <p className="text-xs text-[#0FA3B1] font-semibold">{member.role}</p>
                   </div>
                 </div>
                 
                 {/* Meta details */}
-                <div className="p-5 flex items-center gap-2 text-[#0B2C24] font-semibold text-xs bg-[#FAF7F2]/60 border-t border-[#EFEBE2]">
+                <div className="p-5 flex items-center gap-2 text-[#004F95] font-semibold text-xs bg-[#F4F9FC]/60 border-t border-[#E2EDF3]">
                   <MapPin className="w-3.5 h-3.5 shrink-0 text-[#C5A880]" />
                   <span>Coverage: {member.location}</span>
                 </div>
