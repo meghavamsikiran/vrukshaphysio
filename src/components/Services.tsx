@@ -133,11 +133,11 @@ export default function Services() {
               className="bg-[#F8FAFC]/40 rounded-3xl overflow-hidden border border-[#E2E8F0] hover:border-[#C5A880] transition-all duration-300 flex flex-col group"
             >
               {/* Framed Image Container */}
-              <div className="relative h-56 overflow-hidden rounded-2xl m-4 bg-[#F8FAFC]">
+              <div className="relative aspect-[16/10] overflow-hidden rounded-2xl m-4 bg-[#F8FAFC]">
                 <img
                   src={service.image}
                   alt={service.title}
-                  className="w-full h-full object-cover group-hover:scale-103 transition-transform duration-500"
+                  className="w-full h-full object-cover object-top group-hover:scale-103 transition-transform duration-500"
                 />
               </div>
 
