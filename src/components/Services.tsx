@@ -2,8 +2,6 @@ import { MessageCircle, Check } from 'lucide-react';
 import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
 
-const WHATSAPP_URL = 'https://wa.me/919381682898';
-
 const services = [
   {
     image: '/images/elderly.png',
@@ -17,6 +15,7 @@ const services = [
       'Plantar Fasciitis & Sports Injuries',
       'Muscle & Joint Pain Relief'
     ],
+    whatsappUrl: 'https://wa.me/919381682898?text=Hello%20VRUKSHA%20PHYSIO%2C%20I%20would%20like%20to%20book%20a%20home%20visit%20appointment%20for%20Pain%20Management%20physiotherapy%20services.',
   },
   {
     image: '/images/orthopedic.png',
@@ -29,6 +28,7 @@ const services = [
       'Back & Neck Pain Therapy',
       'Ligament Sprains & Muscle Strains'
     ],
+    whatsappUrl: 'https://wa.me/919381682898?text=Hello%20VRUKSHA%20PHYSIO%2C%20I%20would%20like%20to%20book%20a%20home%20visit%20appointment%20for%20Orthopedic%20Physiotherapy%20services.',
   },
   {
     image: '/images/neuro.png',
@@ -41,6 +41,7 @@ const services = [
       'Multiple Sclerosis Support',
       'Balance & Coordination training'
     ],
+    whatsappUrl: 'https://wa.me/919381682898?text=Hello%20VRUKSHA%20PHYSIO%2C%20I%20would%20like%20to%20book%20a%20home%20visit%20appointment%20for%20Neurological%20Physiotherapy%20services.',
   },
   {
     image: '/images/cardio.png',
@@ -53,6 +54,7 @@ const services = [
       'Pulmonary Strength Building',
       'Endurance Enhancement'
     ],
+    whatsappUrl: 'https://wa.me/919381682898?text=Hello%20VRUKSHA%20PHYSIO%2C%20I%20would%20like%20to%20book%20a%20home%20visit%20appointment%20for%20Cardio%20Physiotherapy%20services.',
   },
   {
     image: '/images/sports.png',
@@ -65,6 +67,7 @@ const services = [
       'Ligament & Muscle Rehab',
       'Dynamic Movement Screening'
     ],
+    whatsappUrl: 'https://wa.me/919381682898?text=Hello%20VRUKSHA%20PHYSIO%2C%20I%20would%20like%20to%20book%20a%20home%20visit%20appointment%20for%20Sports%20Physiotherapy%20services.',
   },
 ];
 
@@ -143,7 +146,7 @@ export default function Services() {
 
                 {/* Action */}
                 <a
-                  href={WHATSAPP_URL}
+                  href={service.whatsappUrl}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-full inline-flex items-center justify-center gap-2 px-6 py-3.5 bg-[#25D366] text-white rounded-full font-bold hover:bg-[#128C7E] transition-all duration-300 shadow-md shadow-green-500/10 hover:shadow-lg hover:shadow-green-500/20"

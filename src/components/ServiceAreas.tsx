@@ -1,4 +1,4 @@
-import { MapPin, MessageCircle } from 'lucide-react';
+import { MapPin } from 'lucide-react';
 import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
 
@@ -172,17 +172,6 @@ export default function ServiceAreas() {
           </motion.div>
         </motion.div>
 
-        <div className="mt-16 text-center">
-          <a
-            href={WHATSAPP_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-8 py-4 bg-[#25D366] text-white rounded-full font-bold text-lg hover:bg-[#128C7E] transition-all duration-300 shadow-lg shadow-green-500/20"
-          >
-            <MessageCircle className="w-5 h-5" />
-            Check Area Availability on WhatsApp
-          </a>
-        </div>
       </div>
     </section>
   );

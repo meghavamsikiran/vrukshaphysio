@@ -144,17 +144,6 @@ export default function Conditions() {
               </div>
             </div>
 
-            <div>
-              <a
-                href={WHATSAPP_URL}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-full inline-flex items-center justify-center gap-2 px-6 py-3.5 bg-[#25D366] text-white rounded-full font-bold hover:bg-[#128C7E] transition-all duration-300 shadow-md shadow-green-500/10 hover:shadow-lg hover:shadow-green-500/20"
-              >
-                <MessageCircle className="w-5 h-5" />
-                Consult Neuro Expert
-              </a>
-            </div>
           </div>
         </div>
       </div>
