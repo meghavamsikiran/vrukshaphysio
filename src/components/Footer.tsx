@@ -1,4 +1,4 @@
-import { Leaf, Phone, MessageCircle, MapPin, ArrowUp } from 'lucide-react';
+import { Phone, MessageCircle, MapPin, ArrowUp } from 'lucide-react';
 import { useState, useEffect } from 'react';
 
 const WHATSAPP_URL = 'https://wa.me/919381682898';
@@ -58,8 +58,8 @@ export default function Footer() {
           {/* Brand */}
           <div className="lg:col-span-1">
             <div className="flex items-center gap-2 mb-4">
-              <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-[#0E7490] to-[#14B8A6] flex items-center justify-center">
-                <Leaf className="w-5 h-5 text-white" />
+              <div className="w-10 h-10 rounded-xl bg-white flex items-center justify-center shadow-md shadow-black/5 overflow-hidden">
+                <img src="/images/logo.png" alt="VRUKSHA PHYSIO Logo" className="w-full h-full object-contain p-1" />
               </div>
               <div>
                 <span className="text-xl font-bold text-white font-[family-name:var(--font-outfit)]">

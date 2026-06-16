@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Leaf, Menu, X, Phone, MessageCircle } from 'lucide-react';
+import { Menu, X, Phone, MessageCircle } from 'lucide-react';
 import { AnimatePresence, motion } from 'framer-motion';
 
 const WHATSAPP_URL = 'https://wa.me/919381682898';
@@ -46,8 +46,8 @@ export default function Navbar() {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <a href="#home" className="flex items-center gap-2 group">
-            <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-[#0E7490] to-[#14B8A6] flex items-center justify-center shadow-md shadow-[#0E7490]/10 group-hover:scale-105 transition-transform duration-300">
-              <Leaf className="w-5 h-5 text-white" />
+            <div className="w-10 h-10 rounded-xl bg-white flex items-center justify-center shadow-md shadow-black/5 group-hover:scale-105 transition-transform duration-300 overflow-hidden">
+              <img src="/images/logo.png" alt="VRUKSHA PHYSIO Logo" className="w-full h-full object-contain p-1" />
             </div>
             <div>
               <span className={`text-xl font-bold font-[family-name:var(--font-outfit)] transition-colors duration-300 ${isScrolled ? 'text-[#0F172A]' : 'text-white'}`}>
