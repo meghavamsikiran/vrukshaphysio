@@ -4,12 +4,11 @@ const WHATSAPP_URL = 'https://wa.me/919381682898';
 
 const team = [
   {
-    image: '/images/bramha-reddy.jpg',
+    image: '/images/bramha-reddy.png',
     name: 'Bramha Reddy Gadikota',
     role: 'Founder & Lead Physiotherapist',
     degree: 'BPT',
     location: 'Hyderabad & Andhra Pradesh',
-    useContain: false,
   },
   {
     image: '/images/chinna-nayak.png',
@@ -17,7 +16,6 @@ const team = [
     role: 'Lead Physiotherapist (Bangalore)',
     degree: 'BPT',
     location: 'Bangalore Hub',
-    useContain: true,
   },
 ];
 
@@ -144,38 +142,34 @@ export default function About() {
             {team.map((member) => (
               <div
                 key={member.name}
-                className="bg-[#F8FAFC] border border-gray-100 rounded-3xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 group flex flex-col"
+                className="bg-[#F8FAFC] border border-gray-100 rounded-3xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 group flex flex-col h-full justify-between"
               >
-                {/* Photo */}
-                <div className="relative h-[380px] overflow-hidden bg-white">
-                  <img
-                    src={member.image}
-                    alt={`${member.name} (${member.degree})`}
-                    className={`w-full h-full transition-all duration-500 ${
-                      member.useContain
-                        ? 'object-contain bg-white group-hover:scale-102'
-                        : 'object-cover object-top group-hover:scale-103'
-                    }`}
-                  />
-                  {!member.useContain && (
-                    <>
-                      <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent"></div>
-                      {/* Name overlay */}
-                      <div className="absolute bottom-5 left-5 right-5 text-white">
-                        <span className="bg-[#0E7490] text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">
-                          {member.degree}
-                        </span>
-                        <h4 className="text-xl font-bold font-[family-name:var(--font-outfit)] mt-2">
-                          {member.name}
-                        </h4>
-                        <p className="text-xs text-gray-200 mt-1">{member.role}</p>
-                      </div>
-                    </>
-                  )}
+                <div>
+                  {/* Photo */}
+                  <div className="relative h-[360px] overflow-hidden bg-white border-b border-gray-100">
+                    <img
+                      src={member.image}
+                      alt={`${member.name} (${member.degree})`}
+                      className="w-full h-full object-contain bg-white group-hover:scale-102 transition-all duration-500"
+                    />
+                  </div>
+                  
+                  {/* Name and Role Section */}
+                  <div className="p-6 bg-white">
+                    <div className="flex items-center gap-2 mb-1.5">
+                      <h4 className="text-xl font-bold font-[family-name:var(--font-outfit)] text-[#0F172A]">
+                        {member.name}
+                      </h4>
+                      <span className="bg-[#0E7490]/10 text-[#0E7490] text-xs font-bold px-2.5 py-0.5 rounded-full uppercase tracking-wider shrink-0">
+                        {member.degree}
+                      </span>
+                    </div>
+                    <p className="text-sm text-gray-500 font-medium">{member.role}</p>
+                  </div>
                 </div>
                 
                 {/* Meta details */}
-                <div className="p-5 flex items-center gap-2 text-[#0E7490] font-semibold text-sm bg-white border-t border-gray-100">
+                <div className="p-5 flex items-center gap-2 text-[#0E7490] font-semibold text-sm bg-[#F8FAFC] border-t border-gray-100">
                   <MapPin className="w-4 h-4 shrink-0 text-[#14B8A6]" />
                   <span>Coverage: {member.location}</span>
                 </div>
