@@ -40,10 +40,10 @@ export default function ServiceAreas() {
   };
 
   return (
-    <section id="areas" className="py-20 md:py-28 bg-white" ref={ref}>
+    <section id="areas" className="py-20 md:py-28 bg-white border-t border-[#EFEBE2]" ref={ref}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <span className="inline-block px-4 py-1.5 bg-[#0E7490]/10 text-[#0E7490] rounded-full text-sm font-semibold mb-4 tracking-wide uppercase">
+          <span className="inline-block px-4 py-1.5 bg-[#124C40]/5 text-[#124C40] rounded-full text-xs font-bold uppercase tracking-widest font-sans mb-4">
             Coverage
           </span>
           <h2 className="section-title teal-underline-center">Our Service Areas</h2>
@@ -61,28 +61,28 @@ export default function ServiceAreas() {
           {/* Hyderabad Card */}
           <motion.div
             variants={cardVariants}
-            className="bg-gradient-to-br from-white to-[#F8FAFC] rounded-3xl p-8 border border-gray-100 shadow-lg hover:shadow-xl transition-all duration-300 relative overflow-hidden flex flex-col justify-between"
+            className="bg-[#FAF7F2]/50 rounded-3xl p-8 border border-[#EFEBE2] hover:border-[#C5A880] transition-all duration-300 relative overflow-hidden flex flex-col justify-between shadow-sm hover:shadow-md"
           >
             {areas.hyderabad.isPrimary && (
-              <div className="absolute top-0 right-0 bg-[#0E7490] text-white text-xs font-bold px-4 py-1 rounded-bl-xl uppercase tracking-wider">
+              <div className="absolute top-0 right-0 bg-[#0B2C24] text-white text-[9px] font-bold px-4 py-1 rounded-bl-xl uppercase tracking-widest">
                 Primary Hub
               </div>
             )}
             <div>
               <div className="flex items-center gap-3 mb-6">
-                <div className="w-10 h-10 rounded-xl bg-[#0E7490]/10 flex items-center justify-center text-[#0E7490] shrink-0">
+                <div className="w-10 h-10 rounded-xl bg-[#C5A880]/15 flex items-center justify-center text-[#C5A880] shrink-0">
                   <MapPin className="w-5 h-5" />
                 </div>
-                <h3 className="text-xl font-bold text-[#0F172A] font-[family-name:var(--font-outfit)]">
+                <h3 className="text-lg font-normal text-[#0B2C24] font-heading">
                   {areas.hyderabad.title}
                 </h3>
               </div>
-              <p className="text-sm text-gray-500 mb-4">Complete coverage across Hyderabad suburbs:</p>
+              <p className="text-xs text-[#5A847B] font-medium mb-4">Complete coverage across Hyderabad suburbs:</p>
               <div className="flex flex-wrap gap-2 mb-8">
                 {areas.hyderabad.tags.map((tag) => (
                   <span
                     key={tag}
-                    className="bg-[#0E7490]/5 text-[#0E7490] text-xs font-semibold px-3 py-1 rounded-full border border-[#0E7490]/10"
+                    className="bg-white text-[#124C40] text-xs font-semibold px-3 py-1.5 rounded-full border border-[#EFEBE2] hover:border-[#C5A880] transition-colors duration-200"
                   >
                     {tag}
                   </span>
@@ -93,7 +93,7 @@ export default function ServiceAreas() {
               href={WHATSAPP_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="w-full inline-flex items-center justify-center gap-2 px-5 py-3 border-2 border-[#0E7490] text-[#0E7490] rounded-full text-sm font-semibold hover:bg-[#0E7490] hover:text-white transition-all duration-300"
+              className="w-full inline-flex items-center justify-center gap-2 px-5 py-3 border border-[#0B2C24] text-[#0B2C24] rounded-full text-xs font-bold uppercase tracking-wider hover:bg-[#0B2C24] hover:text-[#FAF7F2] transition-all duration-300"
             >
               Check Availability
             </a>
@@ -102,23 +102,23 @@ export default function ServiceAreas() {
           {/* Bangalore Card */}
           <motion.div
             variants={cardVariants}
-            className="bg-gradient-to-br from-white to-[#F8FAFC] rounded-3xl p-8 border border-gray-100 shadow-lg hover:shadow-xl transition-all duration-300 flex flex-col justify-between"
+            className="bg-[#FAF7F2]/50 rounded-3xl p-8 border border-[#EFEBE2] hover:border-[#C5A880] transition-all duration-300 flex flex-col justify-between shadow-sm hover:shadow-md"
           >
             <div>
               <div className="flex items-center gap-3 mb-6">
-                <div className="w-10 h-10 rounded-xl bg-[#14B8A6]/10 flex items-center justify-center text-[#14B8A6] shrink-0">
+                <div className="w-10 h-10 rounded-xl bg-[#C5A880]/15 flex items-center justify-center text-[#C5A880] shrink-0">
                   <MapPin className="w-5 h-5" />
                 </div>
-                <h3 className="text-xl font-bold text-[#0F172A] font-[family-name:var(--font-outfit)]">
+                <h3 className="text-lg font-normal text-[#0B2C24] font-heading">
                   {areas.bangalore.title}
                 </h3>
               </div>
-              <p className="text-sm text-gray-500 mb-4">Major localities covered across Bangalore:</p>
+              <p className="text-xs text-[#5A847B] font-medium mb-4">Major localities covered across Bangalore:</p>
               <div className="flex flex-wrap gap-2 mb-8">
                 {areas.bangalore.tags.map((tag) => (
                   <span
                     key={tag}
-                    className="bg-[#14B8A6]/5 text-[#14B8A6] text-xs font-semibold px-3 py-1 rounded-full border border-[#14B8A6]/10"
+                    className="bg-white text-[#124C40] text-xs font-semibold px-3 py-1.5 rounded-full border border-[#EFEBE2] hover:border-[#C5A880] transition-colors duration-200"
                   >
                     {tag}
                   </span>
@@ -129,7 +129,7 @@ export default function ServiceAreas() {
               href={WHATSAPP_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="w-full inline-flex items-center justify-center gap-2 px-5 py-3 border-2 border-[#14B8A6] text-[#14B8A6] rounded-full text-sm font-semibold hover:bg-[#14B8A6] hover:text-white transition-all duration-300"
+              className="w-full inline-flex items-center justify-center gap-2 px-5 py-3 border border-[#0B2C24] text-[#0B2C24] rounded-full text-xs font-bold uppercase tracking-wider hover:bg-[#0B2C24] hover:text-[#FAF7F2] transition-all duration-300"
             >
               Check Availability
             </a>
@@ -138,23 +138,23 @@ export default function ServiceAreas() {
           {/* AP Card */}
           <motion.div
             variants={cardVariants}
-            className="bg-gradient-to-br from-white to-[#F8FAFC] rounded-3xl p-8 border border-gray-100 shadow-lg hover:shadow-xl transition-all duration-300 flex flex-col justify-between"
+            className="bg-[#FAF7F2]/50 rounded-3xl p-8 border border-[#EFEBE2] hover:border-[#C5A880] transition-all duration-300 flex flex-col justify-between shadow-sm hover:shadow-md"
           >
             <div>
               <div className="flex items-center gap-3 mb-6">
-                <div className="w-10 h-10 rounded-xl bg-[#0891B2]/10 flex items-center justify-center text-[#0891B2] shrink-0">
+                <div className="w-10 h-10 rounded-xl bg-[#C5A880]/15 flex items-center justify-center text-[#C5A880] shrink-0">
                   <MapPin className="w-5 h-5" />
                 </div>
-                <h3 className="text-xl font-bold text-[#0F172A] font-[family-name:var(--font-outfit)]">
+                <h3 className="text-lg font-normal text-[#0B2C24] font-heading">
                   {areas.andhraPradesh.title}
                 </h3>
               </div>
-              <p className="text-sm text-gray-500 mb-4">Physiotherapy visits available in key AP cities:</p>
+              <p className="text-xs text-[#5A847B] font-medium mb-4">Physiotherapy visits available in key AP cities:</p>
               <div className="flex flex-wrap gap-2 mb-8">
                 {areas.andhraPradesh.tags.map((tag) => (
                   <span
                     key={tag}
-                    className="bg-[#0891B2]/5 text-[#0891B2] text-xs font-semibold px-3 py-1 rounded-full border border-[#0891B2]/10"
+                    className="bg-white text-[#124C40] text-xs font-semibold px-3 py-1.5 rounded-full border border-[#EFEBE2] hover:border-[#C5A880] transition-colors duration-200"
                   >
                     {tag}
                   </span>
@@ -165,7 +165,7 @@ export default function ServiceAreas() {
               href={WHATSAPP_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="w-full inline-flex items-center justify-center gap-2 px-5 py-3 border-2 border-[#0891B2] text-[#0891B2] rounded-full text-sm font-semibold hover:bg-[#0891B2] hover:text-white transition-all duration-300"
+              className="w-full inline-flex items-center justify-center gap-2 px-5 py-3 border border-[#0B2C24] text-[#0B2C24] rounded-full text-xs font-bold uppercase tracking-wider hover:bg-[#0B2C24] hover:text-[#FAF7F2] transition-all duration-300"
             >
               Check Availability
             </a>

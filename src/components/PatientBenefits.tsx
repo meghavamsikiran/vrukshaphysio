@@ -53,10 +53,10 @@ export default function PatientBenefits() {
   };
 
   return (
-    <section id="benefits" className="py-20 md:py-28 bg-gradient-to-b from-[#F8FAFC] to-white" ref={ref}>
+    <section id="benefits" className="py-20 md:py-28 bg-gradient-to-b from-[#FAF7F2] to-white border-t border-[#EFEBE2]" ref={ref}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <span className="inline-block px-4 py-1.5 bg-[#0E7490]/10 text-[#0E7490] rounded-full text-sm font-semibold mb-4 tracking-wide uppercase">
+          <span className="inline-block px-4 py-1.5 bg-[#124C40]/5 text-[#124C40] rounded-full text-xs font-bold uppercase tracking-widest font-sans mb-4">
             Patient Advantages
           </span>
           <h2 className="section-title teal-underline-center">Benefits of Home Physiotherapy</h2>
@@ -77,15 +77,15 @@ export default function PatientBenefits() {
               <motion.div
                 key={b.title}
                 variants={itemVariants}
-                className="bg-white rounded-3xl p-8 border border-gray-100 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col items-start hover:-translate-y-1 group"
+                className="bg-white rounded-3xl p-8 border border-[#EFEBE2] hover:border-[#C5A880] transition-all duration-300 flex flex-col items-start group shadow-sm hover:shadow-md"
               >
-                <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-[#0E7490] to-[#14B8A6] flex items-center justify-center text-white mb-6 group-hover:scale-110 transition-transform duration-300">
-                  <IconComponent className="w-6 h-6" />
+                <div className="w-12 h-12 rounded-xl bg-[#C5A880]/15 flex items-center justify-center text-[#C5A880] mb-6 group-hover:scale-105 transition-transform duration-300">
+                  <IconComponent className="w-5 h-5" />
                 </div>
-                <h3 className="text-xl font-bold text-[#0F172A] mb-3 font-[family-name:var(--font-outfit)]">
+                <h3 className="text-lg font-normal text-[#0B2C24] mb-3 font-heading">
                   {b.title}
                 </h3>
-                <p className="text-gray-600 text-sm leading-relaxed">
+                <p className="text-[#5A847B] text-sm leading-relaxed font-sans">
                   {b.desc}
                 </p>
               </motion.div>

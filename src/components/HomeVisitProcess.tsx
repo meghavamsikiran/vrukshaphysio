@@ -51,20 +51,20 @@ export default function HomeVisitProcess() {
   };
 
   return (
-    <section id="process" className="py-20 md:py-28 bg-[#0F172A] text-white relative overflow-hidden" ref={ref}>
+    <section id="process" className="py-20 md:py-28 bg-[#0B2C24] text-white relative overflow-hidden" ref={ref}>
       {/* Decorative gradient blur */}
-      <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-[#0E7490]/20 rounded-full blur-3xl -z-10"></div>
-      <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-[#14B8A6]/15 rounded-full blur-3xl -z-10"></div>
+      <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-[#C5A880]/10 rounded-full blur-3xl -z-10"></div>
+      <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-[#124C40]/25 rounded-full blur-3xl -z-10"></div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-20">
-          <span className="inline-block px-4 py-1.5 bg-white/10 backdrop-blur-md border border-white/20 rounded-full text-sm font-semibold mb-4 tracking-wide uppercase text-[#14B8A6]">
+          <span className="inline-block px-4 py-1.5 bg-white/10 border border-white/10 rounded-full text-xs font-bold uppercase tracking-widest text-[#C5A880] mb-4">
             Our Methodology
           </span>
-          <h2 className="text-3xl md:text-5xl font-bold font-[family-name:var(--font-outfit)] text-white relative after:content-[''] after:block after:w-20 after:height-1 after:bg-[#14B8A6] after:mx-auto after:mt-4">
+          <h2 className="section-title text-white teal-underline-center">
             How It Works
           </h2>
-          <p className="text-gray-400 max-w-xl mx-auto mt-6 text-base leading-relaxed">
+          <p className="text-gray-300 max-w-xl mx-auto mt-6 text-sm leading-relaxed font-sans font-medium">
             Your structured road to recovery mapped out across four transparent steps.
           </p>
         </div>
@@ -82,26 +82,26 @@ export default function HomeVisitProcess() {
               <motion.div
                 key={step.number}
                 variants={itemVariants}
-                className="relative bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6 hover:bg-white/10 transition-colors duration-300 flex flex-col items-center text-center group"
+                className="relative bg-white/5 border border-white/10 rounded-2xl p-6 hover:bg-white/10 transition-colors duration-300 flex flex-col items-center text-center group"
               >
                 {/* Connector line for desktop (hidden on mobile and last card) */}
                 {i < 3 && (
-                  <div className="hidden md:block absolute top-1/2 left-[calc(100%_-_16px)] w-[calc(100%_-_32px)] h-0.5 bg-gradient-to-r from-[#14B8A6] to-white/10 z-0"></div>
+                  <div className="hidden md:block absolute top-12 left-[calc(100%_-_16px)] w-[calc(100%_-_32px)] h-0.5 bg-gradient-to-r from-[#C5A880] to-white/10 z-0"></div>
                 )}
 
                 {/* Number Badge */}
-                <div className="w-10 h-10 rounded-full bg-gradient-to-br from-[#0E7490] to-[#14B8A6] flex items-center justify-center text-white text-xs font-bold mb-6">
+                <div className="w-8 h-8 rounded-full bg-[#C5A880] flex items-center justify-center text-[#0B2C24] text-xs font-bold mb-6 relative z-10">
                   {step.number}
                 </div>
 
                 <div className="w-14 h-14 rounded-2xl bg-white/10 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
-                  <IconComponent className="w-6 h-6 text-[#14B8A6]" />
+                  <IconComponent className="w-5 h-5 text-[#C5A880]" />
                 </div>
 
-                <h3 className="text-xl font-bold text-white mb-3 font-[family-name:var(--font-outfit)]">
+                <h3 className="text-lg font-normal text-white mb-3 font-heading">
                   {step.title}
                 </h3>
-                <p className="text-gray-400 text-sm leading-relaxed">
+                <p className="text-gray-300 text-sm leading-relaxed font-sans">
                   {step.desc}
                 </p>
               </motion.div>
@@ -114,9 +114,9 @@ export default function HomeVisitProcess() {
             href={WHATSAPP_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-8 py-4 bg-[#25D366] text-white rounded-full font-bold text-lg hover:bg-[#128C7E] transition-all duration-300 shadow-lg shadow-green-500/20"
+            className="inline-flex items-center gap-2 px-8 py-4 bg-[#25D366] text-white rounded-full font-bold uppercase tracking-wider text-xs hover:bg-[#128C7E] transition-all duration-300 shadow-lg"
           >
-            <MessageCircle className="w-5 h-5" />
+            <MessageCircle className="w-4 h-4" />
             Start Your Recovery Today
           </a>
         </div>

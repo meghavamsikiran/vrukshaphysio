@@ -67,10 +67,10 @@ export default function Testimonials() {
   const current = testimonials[index];
 
   return (
-    <section id="testimonials" className="py-20 md:py-28 bg-[#F8FAFC]">
+    <section id="testimonials" className="py-20 md:py-28 bg-white border-t border-[#EFEBE2]">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div className="mb-12">
-          <span className="inline-block px-4 py-1.5 bg-[#0E7490]/10 text-[#0E7490] rounded-full text-sm font-semibold mb-4 tracking-wide uppercase">
+          <span className="inline-block px-4 py-1.5 bg-[#124C40]/5 text-[#124C40] rounded-full text-xs font-bold uppercase tracking-widest font-sans mb-4">
             Success Stories
           </span>
           <h2 className="section-title teal-underline-center">What Our Patients Say</h2>
@@ -80,44 +80,44 @@ export default function Testimonials() {
         </div>
 
         {/* Carousel Container */}
-        <div className="relative bg-white rounded-3xl p-8 md:p-12 shadow-xl border border-gray-100 min-h-[300px] flex flex-col justify-between overflow-hidden">
+        <div className="relative bg-[#FAF7F2]/60 rounded-3xl p-8 md:p-12 border border-[#EFEBE2] min-h-[300px] flex flex-col justify-between overflow-hidden shadow-sm">
           {/* Quote Icon */}
-          <div className="absolute top-6 left-6 text-gray-100">
-            <Quote className="w-20 h-20 rotate-180 opacity-50 shrink-0" />
+          <div className="absolute top-6 left-6 text-[#C5A880]/10">
+            <Quote className="w-20 h-20 rotate-180 opacity-60 shrink-0" />
           </div>
 
           <div className="relative z-10">
             {/* Rating Stars */}
             <div className="flex items-center justify-center gap-1 mb-6">
               {[...Array(current.rating)].map((_, i) => (
-                <Star key={i} className="w-5 h-5 fill-amber-400 text-amber-400" />
+                <Star key={i} className="w-4 h-4 fill-[#C5A880] text-[#C5A880]" />
               ))}
             </div>
 
             {/* Testimonial text */}
-            <p className="text-gray-700 text-lg md:text-xl italic leading-relaxed mb-8">
+            <p className="text-[#0B2C24] text-lg md:text-xl italic leading-relaxed mb-8 font-heading">
               &ldquo;{current.quote}&rdquo;
             </p>
 
             {/* Profile detail */}
             <div>
-              <h4 className="text-lg font-bold text-[#0F172A] font-[family-name:var(--font-outfit)]">
+              <h4 className="text-base font-bold text-[#0B2C24] font-sans uppercase tracking-wider">
                 {current.name}
               </h4>
-              <p className="text-sm text-[#0E7490] font-semibold">
+              <p className="text-xs text-[#C5A880] font-bold uppercase tracking-widest mt-1">
                 {current.condition} &bull; {current.location}
               </p>
             </div>
           </div>
 
           {/* Navigation Controls */}
-          <div className="flex items-center justify-between mt-8 relative z-10 border-t border-gray-50 pt-6">
+          <div className="flex items-center justify-between mt-8 relative z-10 border-t border-[#EFEBE2] pt-6">
             <button
               onClick={handlePrev}
-              className="p-2.5 rounded-full border border-gray-200 text-gray-600 hover:bg-[#0E7490] hover:text-white hover:border-[#0E7490] transition-colors"
+              className="p-2.5 rounded-full border border-[#EFEBE2] text-[#124C40] hover:bg-[#0B2C24] hover:text-[#FAF7F2] hover:border-[#0B2C24] transition-colors"
               aria-label="Previous story"
             >
-              <ChevronLeft className="w-5 h-5" />
+              <ChevronLeft className="w-4 h-4" />
             </button>
 
             {/* Indicator dots */}
@@ -126,8 +126,8 @@ export default function Testimonials() {
                 <button
                   key={i}
                   onClick={() => setIndex(i)}
-                  className={`w-2 h-2 rounded-full transition-all duration-300 ${
-                    i === index ? 'w-6 bg-[#0E7490]' : 'bg-gray-300'
+                  className={`w-1.5 h-1.5 rounded-full transition-all duration-300 ${
+                    i === index ? 'w-5 bg-[#0B2C24]' : 'bg-[#EFEBE2]'
                   }`}
                   aria-label={`Go to slide ${i + 1}`}
                 />
@@ -136,10 +136,10 @@ export default function Testimonials() {
 
             <button
               onClick={handleNext}
-              className="p-2.5 rounded-full border border-gray-200 text-gray-600 hover:bg-[#0E7490] hover:text-white hover:border-[#0E7490] transition-colors"
+              className="p-2.5 rounded-full border border-[#EFEBE2] text-[#124C40] hover:bg-[#0B2C24] hover:text-[#FAF7F2] hover:border-[#0B2C24] transition-colors"
               aria-label="Next story"
             >
-              <ChevronRight className="w-5 h-5" />
+              <ChevronRight className="w-4 h-4" />
             </button>
           </div>
         </div>

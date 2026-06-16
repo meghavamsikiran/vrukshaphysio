@@ -38,7 +38,7 @@ export default function Navbar() {
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
-          ? 'bg-white/90 backdrop-blur-md shadow-md py-3'
+          ? 'bg-[#FAF7F2]/95 backdrop-blur-md border-b border-[#EFEBE2] py-3 shadow-sm'
           : 'bg-transparent py-5'
       }`}
     >
@@ -46,14 +46,14 @@ export default function Navbar() {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <a href="#home" className="flex items-center gap-3 group">
-            <div className="w-12 h-12 rounded-xl bg-white flex items-center justify-center shadow-md shadow-black/5 group-hover:scale-105 transition-transform duration-300 overflow-hidden">
-              <img src="/images/logo.png" alt="VRUKSHA PHYSIO Logo" className="w-full h-full object-contain scale-130" />
+            <div className="w-11 h-11 rounded-xl bg-white flex items-center justify-center shadow-sm border border-[#EFEBE2] group-hover:scale-105 transition-transform duration-300 overflow-hidden shrink-0">
+              <img src="/images/logo.png" alt="VRUKSHA PHYSIO Logo" className="w-full h-full object-contain scale-135" />
             </div>
             <div>
-              <span className={`text-xl font-bold font-[family-name:var(--font-outfit)] transition-colors duration-300 ${isScrolled ? 'text-[#0F172A]' : 'text-white'}`}>
+              <span className={`text-xl font-bold font-sans tracking-wide transition-colors duration-300 ${isScrolled ? 'text-[#0B2C24]' : 'text-white'}`}>
                 VRUKSHA
               </span>
-              <span className="text-xl font-bold text-[#14B8A6] font-[family-name:var(--font-outfit)]">
+              <span className="text-xl font-bold text-[#C5A880] font-sans tracking-wide">
                 {' '}PHYSIO
               </span>
             </div>
@@ -66,10 +66,10 @@ export default function Navbar() {
                 key={item.name}
                 href={item.href}
                 onClick={(e) => handleLinkClick(e, item.href)}
-                className={`font-medium text-sm transition-colors duration-300 ${
+                className={`font-semibold text-sm tracking-wide transition-colors duration-300 ${
                   isScrolled
-                    ? 'text-gray-600 hover:text-[#0E7490]'
-                    : 'text-white/80 hover:text-white'
+                    ? 'text-[#0B2C24]/80 hover:text-[#C5A880]'
+                    : 'text-white/80 hover:text-[#C5A880]'
                 }`}
               >
                 {item.name}
@@ -81,22 +81,22 @@ export default function Navbar() {
           <div className="hidden lg:flex items-center gap-4">
             <a
               href={CALL_URL}
-              className={`inline-flex items-center gap-2 px-5 py-2 border-2 rounded-full text-sm font-semibold transition-all duration-300 ${
+              className={`inline-flex items-center gap-2 px-5 py-2 border rounded-full text-xs font-bold uppercase tracking-wider transition-all duration-300 ${
                 isScrolled
-                  ? 'border-[#0E7490] text-[#0E7490] hover:bg-[#0E7490] hover:text-white'
-                  : 'border-white text-white hover:bg-white hover:text-[#0F172A]'
+                  ? 'border-[#0B2C24] text-[#0B2C24] hover:bg-[#0B2C24] hover:text-[#FAF7F2]'
+                  : 'border-white/30 text-white hover:bg-white hover:text-[#0B2C24]'
               }`}
             >
-              <Phone className="w-4 h-4" />
+              <Phone className="w-3.5 h-3.5" />
               Call Now
             </a>
             <a
               href={WHATSAPP_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-5 py-2.5 bg-[#25D366] text-white rounded-full text-sm font-semibold hover:bg-[#128C7E] transition-all duration-300 shadow-md shadow-green-500/10 hover:shadow-lg hover:shadow-green-500/20"
+              className="inline-flex items-center gap-2 px-5 py-2.5 bg-[#25D366] text-white rounded-full text-xs font-bold uppercase tracking-wider hover:bg-[#128C7E] transition-all duration-300 shadow-md shadow-green-500/10 hover:shadow-lg hover:shadow-green-500/20"
             >
-              <MessageCircle className="w-4 h-4" />
+              <MessageCircle className="w-3.5 h-3.5" />
               Book on WhatsApp
             </a>
           </div>
@@ -106,7 +106,7 @@ export default function Navbar() {
             <button
               onClick={() => setIsOpen(!isOpen)}
               className={`p-2 transition-colors ${
-                isScrolled ? 'text-gray-700 hover:text-[#0E7490]' : 'text-white hover:text-[#14B8A6]'
+                isScrolled ? 'text-[#0B2C24] hover:text-[#C5A880]' : 'text-white hover:text-[#C5A880]'
               }`}
               aria-label="Toggle menu"
             >
@@ -124,7 +124,7 @@ export default function Navbar() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.2 }}
-            className="lg:hidden fixed top-[64px] left-0 right-0 bg-white shadow-xl border-t border-gray-100 py-6 px-4 flex flex-col gap-6"
+            className="lg:hidden fixed top-[60px] left-0 right-0 bg-[#FAF7F2] shadow-xl border-t border-[#EFEBE2] py-6 px-4 flex flex-col gap-6"
           >
             <div className="flex flex-col gap-4">
               {menuItems.map((item) => (
@@ -132,28 +132,28 @@ export default function Navbar() {
                   key={item.name}
                   href={item.href}
                   onClick={(e) => handleLinkClick(e, item.href)}
-                  className="text-gray-800 hover:text-[#0E7490] font-semibold text-lg py-2 border-b border-gray-50 transition-colors"
+                  className="text-[#0B2C24] hover:text-[#C5A880] font-bold text-lg py-2 border-b border-[#EFEBE2]/50 transition-colors"
                 >
                   {item.name}
                 </a>
               ))}
             </div>
 
-            <div className="flex flex-col gap-3 pt-4 border-t border-gray-100">
+            <div className="flex flex-col gap-3 pt-4 border-t border-[#EFEBE2]">
               <a
                 href={CALL_URL}
-                className="w-full flex items-center justify-center gap-2 px-5 py-3 border-2 border-[#0E7490] text-[#0E7490] rounded-full font-semibold transition-colors hover:bg-[#0E7490] hover:text-white"
+                className="w-full flex items-center justify-center gap-2 px-5 py-3 border border-[#0B2C24] text-[#0B2C24] rounded-full font-bold uppercase tracking-wider text-xs transition-colors hover:bg-[#0B2C24] hover:text-[#FAF7F2]"
               >
-                <Phone className="w-5 h-5" />
+                <Phone className="w-4 h-4" />
                 Call Now
               </a>
               <a
                 href={WHATSAPP_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full flex items-center justify-center gap-2 px-5 py-3 bg-[#25D366] text-white rounded-full font-semibold shadow-md transition-colors hover:bg-[#128C7E]"
+                className="w-full flex items-center justify-center gap-2 px-5 py-3 bg-[#25D366] text-white rounded-full font-bold uppercase tracking-wider text-xs shadow-md transition-colors hover:bg-[#128C7E]"
               >
-                <MessageCircle className="w-5 h-5" />
+                <MessageCircle className="w-4 h-4" />
                 Book on WhatsApp
               </a>
             </div>

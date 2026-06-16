@@ -75,7 +75,7 @@ const services = [
   {
     image: '/images/pediatric.png',
     title: 'Pediatric Physiotherapy',
-    desc: 'Our pediatric physiotherapy services focus on helping infants, children, and adolescents achieve their optimal physical development and functional independence.',
+    desc: 'Our pediatric physiotherapy services focus on helping infants, children, and adolescents achieve their optimal physical development.',
     points: [
       'Developmental Delay & Milestones',
       'Cerebral Palsy & Down Syndrome',
@@ -111,7 +111,7 @@ export default function Services() {
     <section id="services" className="py-20 md:py-28 bg-white" ref={ref}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <span className="inline-block px-4 py-1.5 bg-[#0E7490]/10 text-[#0E7490] rounded-full text-sm font-semibold mb-4 tracking-wide uppercase">
+          <span className="inline-block px-4 py-1.5 bg-[#124C40]/5 text-[#124C40] rounded-full text-xs font-bold uppercase tracking-widest font-sans mb-4">
             What We Do
           </span>
           <h2 className="section-title teal-underline-center">Our Specialized Services</h2>
@@ -130,35 +130,34 @@ export default function Services() {
             <motion.div
               key={service.title}
               variants={cardVariants}
-              className="bg-white rounded-3xl overflow-hidden border border-gray-100 shadow-lg hover:shadow-2xl transition-all duration-300 flex flex-col group"
+              className="bg-[#FAF7F2]/40 rounded-3xl overflow-hidden border border-[#EFEBE2] hover:border-[#C5A880] transition-all duration-300 flex flex-col group"
             >
-              {/* Image Container */}
-              <div className="relative h-64 sm:h-72 overflow-hidden">
+              {/* Framed Image Container */}
+              <div className="relative h-56 overflow-hidden rounded-2xl m-4 bg-[#FAF7F2]">
                 <img
                   src={service.image}
                   alt={service.title}
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  className="w-full h-full object-cover group-hover:scale-103 transition-transform duration-500"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
-                <h3 className="absolute bottom-6 left-6 text-2xl font-bold text-white font-[family-name:var(--font-outfit)]">
-                  {service.title}
-                </h3>
               </div>
 
               {/* Content Area */}
-              <div className="p-8 flex flex-col flex-1">
-                <p className="text-gray-600 leading-relaxed mb-6">
+              <div className="px-6 pb-6 pt-2 flex flex-col flex-1">
+                <h3 className="text-xl font-normal text-[#0B2C24] mb-3 font-heading leading-tight min-h-[56px] flex items-center">
+                  {service.title}
+                </h3>
+                <p className="text-[#5A847B] text-sm leading-relaxed mb-6 font-sans">
                   {service.desc}
                 </p>
 
                 {/* Points */}
                 <div className="space-y-3 mb-8 flex-1">
                   {service.points.map((pt) => (
-                    <div key={pt} className="flex items-start gap-2 text-sm text-gray-700">
-                      <div className="w-5 h-5 rounded-full bg-[#14B8A6]/10 flex items-center justify-center shrink-0 mt-0.5">
-                        <Check className="w-3.5 h-3.5 text-[#14B8A6]" />
+                    <div key={pt} className="flex items-start gap-2.5 text-sm text-[#0B2C24] font-medium">
+                      <div className="w-4 h-4 rounded-full bg-[#C5A880]/15 flex items-center justify-center shrink-0 mt-0.5">
+                        <Check className="w-2.5 h-2.5 text-[#C5A880]" />
                       </div>
-                      <span>{pt}</span>
+                      <span className="leading-tight">{pt}</span>
                     </div>
                   ))}
                 </div>
@@ -168,10 +167,10 @@ export default function Services() {
                   href={service.whatsappUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-full inline-flex items-center justify-center gap-2 px-6 py-3.5 bg-[#25D366] text-white rounded-full font-bold hover:bg-[#128C7E] transition-all duration-300 shadow-md shadow-green-500/10 hover:shadow-lg hover:shadow-green-500/20"
+                  className="w-full inline-flex items-center justify-center gap-2 px-6 py-3.5 bg-[#25D366] text-white rounded-full font-bold uppercase tracking-wider text-xs hover:bg-[#128C7E] transition-all duration-300 shadow-md shadow-green-500/10"
                 >
-                  <MessageCircle className="w-5 h-5" />
-                  Book Appointment on WhatsApp
+                  <MessageCircle className="w-4 h-4" />
+                  Book on WhatsApp
                 </a>
               </div>
             </motion.div>
