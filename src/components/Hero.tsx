@@ -77,7 +77,7 @@ export default function Hero() {
             variants={itemVariants}
             className="text-lg text-slate-200/90 leading-relaxed max-w-xl font-sans font-medium"
           >
-            Experience professional, evidence-based rehabilitation in the comfort of your home. Led by Bramha Reddy Gadikota (BPT) across Hyderabad, Bangalore, and Andhra Pradesh.
+            Experience professional, evidence-based rehabilitation in the comfort of your home. Led by a team of highly qualified and experienced physiotherapists across Hyderabad, Bangalore, and Andhra Pradesh.
           </motion.p>
 
           {/* Highlights Grid */}

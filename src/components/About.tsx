@@ -154,7 +154,7 @@ export default function About() {
                       alt={`${member.name} (${member.degree})`}
                       className={`w-full h-full object-cover object-top transition-all duration-500 ${
                         member.name.includes('Bramha')
-                          ? 'scale-[1.4] origin-top group-hover:scale-[1.45]'
+                          ? 'scale-[1.55] origin-top group-hover:scale-[1.6]'
                           : 'group-hover:scale-103'
                       }`}
                     />
