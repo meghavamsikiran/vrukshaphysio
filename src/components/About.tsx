@@ -146,7 +146,7 @@ export default function About() {
               >
                 <div>
                   {/* Photo */}
-                  <div className="relative h-[460px] overflow-hidden bg-white border-b border-gray-100">
+                  <div className="relative h-[520px] overflow-hidden bg-white border-b border-gray-100">
                     <img
                       src={member.image}
                       alt={`${member.name} (${member.degree})`}
