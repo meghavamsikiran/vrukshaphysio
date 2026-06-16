@@ -150,7 +150,11 @@ export default function About() {
                     <img
                       src={member.image}
                       alt={`${member.name} (${member.degree})`}
-                      className="w-full h-full object-contain bg-white group-hover:scale-102 transition-all duration-500"
+                      className={`w-full h-full object-cover object-top transition-all duration-500 ${
+                        member.name.includes('Bramha')
+                          ? 'scale-[1.55] origin-top group-hover:scale-[1.6]'
+                          : 'group-hover:scale-103'
+                      }`}
                     />
                   </div>
                   
