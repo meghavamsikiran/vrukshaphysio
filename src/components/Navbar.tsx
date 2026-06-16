@@ -38,7 +38,7 @@ export default function Navbar() {
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
-          ? 'bg-[#F4F9FC]/95 backdrop-blur-md border-b border-[#E2EDF3] py-3 shadow-sm'
+          ? 'bg-[#F8FAFC]/95 backdrop-blur-md border-b border-[#E2E8F0] py-3 shadow-sm'
           : 'bg-transparent py-5'
       }`}
     >
@@ -46,11 +46,11 @@ export default function Navbar() {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <a href="#home" className="flex items-center gap-3 group">
-            <div className="w-11 h-11 rounded-xl bg-white flex items-center justify-center shadow-sm border border-[#E2EDF3] group-hover:scale-105 transition-transform duration-300 overflow-hidden shrink-0">
+            <div className="w-11 h-11 rounded-xl bg-white flex items-center justify-center shadow-sm border border-[#E2E8F0] group-hover:scale-105 transition-transform duration-300 overflow-hidden shrink-0">
               <img src="/images/logo.png" alt="VRUKSHA PHYSIO Logo" className="w-full h-full object-contain scale-135" />
             </div>
             <div>
-              <span className={`text-xl font-bold font-sans tracking-wide transition-colors duration-300 ${isScrolled ? 'text-[#004F95]' : 'text-white'}`}>
+              <span className={`text-xl font-bold font-sans tracking-wide transition-colors duration-300 ${isScrolled ? 'text-[#0C2340]' : 'text-white'}`}>
                 VRUKSHA
               </span>
               <span className="text-xl font-bold text-[#C5A880] font-sans tracking-wide">
@@ -68,7 +68,7 @@ export default function Navbar() {
                 onClick={(e) => handleLinkClick(e, item.href)}
                 className={`font-semibold text-sm tracking-wide transition-colors duration-300 ${
                   isScrolled
-                    ? 'text-[#004F95]/80 hover:text-[#C5A880]'
+                    ? 'text-[#0C2340]/80 hover:text-[#C5A880]'
                     : 'text-white/80 hover:text-[#C5A880]'
                 }`}
               >
@@ -83,8 +83,8 @@ export default function Navbar() {
               href={CALL_URL}
               className={`inline-flex items-center gap-2 px-5 py-2 border rounded-full text-xs font-bold uppercase tracking-wider transition-all duration-300 ${
                 isScrolled
-                  ? 'border-[#004F95] text-[#004F95] hover:bg-[#004F95] hover:text-[#F4F9FC]'
-                  : 'border-white/30 text-white hover:bg-white hover:text-[#004F95]'
+                  ? 'border-[#0C2340] text-[#0C2340] hover:bg-[#0C2340] hover:text-[#F8FAFC]'
+                  : 'border-white/30 text-white hover:bg-white hover:text-[#0C2340]'
               }`}
             >
               <Phone className="w-3.5 h-3.5" />
@@ -106,7 +106,7 @@ export default function Navbar() {
             <button
               onClick={() => setIsOpen(!isOpen)}
               className={`p-2 transition-colors ${
-                isScrolled ? 'text-[#004F95] hover:text-[#C5A880]' : 'text-white hover:text-[#C5A880]'
+                isScrolled ? 'text-[#0C2340] hover:text-[#C5A880]' : 'text-white hover:text-[#C5A880]'
               }`}
               aria-label="Toggle menu"
             >
@@ -124,7 +124,7 @@ export default function Navbar() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.2 }}
-            className="lg:hidden fixed top-[60px] left-0 right-0 bg-[#F4F9FC] shadow-xl border-t border-[#E2EDF3] py-6 px-4 flex flex-col gap-6"
+            className="lg:hidden fixed top-[60px] left-0 right-0 bg-[#F8FAFC] shadow-xl border-t border-[#E2E8F0] py-6 px-4 flex flex-col gap-6"
           >
             <div className="flex flex-col gap-4">
               {menuItems.map((item) => (
@@ -132,17 +132,17 @@ export default function Navbar() {
                   key={item.name}
                   href={item.href}
                   onClick={(e) => handleLinkClick(e, item.href)}
-                  className="text-[#004F95] hover:text-[#C5A880] font-bold text-lg py-2 border-b border-[#E2EDF3]/50 transition-colors"
+                  className="text-[#0C2340] hover:text-[#C5A880] font-bold text-lg py-2 border-b border-[#E2E8F0]/50 transition-colors"
                 >
                   {item.name}
                 </a>
               ))}
             </div>
 
-            <div className="flex flex-col gap-3 pt-4 border-t border-[#E2EDF3]">
+            <div className="flex flex-col gap-3 pt-4 border-t border-[#E2E8F0]">
               <a
                 href={CALL_URL}
-                className="w-full flex items-center justify-center gap-2 px-5 py-3 border border-[#004F95] text-[#004F95] rounded-full font-bold uppercase tracking-wider text-xs transition-colors hover:bg-[#004F95] hover:text-[#F4F9FC]"
+                className="w-full flex items-center justify-center gap-2 px-5 py-3 border border-[#0C2340] text-[#0C2340] rounded-full font-bold uppercase tracking-wider text-xs transition-colors hover:bg-[#0C2340] hover:text-[#F8FAFC]"
               >
                 <Phone className="w-4 h-4" />
                 Call Now

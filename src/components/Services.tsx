@@ -111,7 +111,7 @@ export default function Services() {
     <section id="services" className="py-20 md:py-28 bg-white" ref={ref}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <span className="inline-block px-4 py-1.5 bg-[#008BA3]/5 text-[#008BA3] rounded-full text-xs font-bold uppercase tracking-widest font-sans mb-4">
+          <span className="inline-block px-4 py-1.5 bg-[#0D9488]/5 text-[#0D9488] rounded-full text-xs font-bold uppercase tracking-widest font-sans mb-4">
             What We Do
           </span>
           <h2 className="section-title teal-underline-center">Our Specialized Services</h2>
@@ -130,10 +130,10 @@ export default function Services() {
             <motion.div
               key={service.title}
               variants={cardVariants}
-              className="bg-[#F4F9FC]/40 rounded-3xl overflow-hidden border border-[#E2EDF3] hover:border-[#C5A880] transition-all duration-300 flex flex-col group"
+              className="bg-[#F8FAFC]/40 rounded-3xl overflow-hidden border border-[#E2E8F0] hover:border-[#C5A880] transition-all duration-300 flex flex-col group"
             >
               {/* Framed Image Container */}
-              <div className="relative h-56 overflow-hidden rounded-2xl m-4 bg-[#F4F9FC]">
+              <div className="relative h-56 overflow-hidden rounded-2xl m-4 bg-[#F8FAFC]">
                 <img
                   src={service.image}
                   alt={service.title}
@@ -143,17 +143,17 @@ export default function Services() {
 
               {/* Content Area */}
               <div className="px-6 pb-6 pt-2 flex flex-col flex-1">
-                <h3 className="text-xl font-normal text-[#004F95] mb-3 font-heading leading-tight min-h-[56px] flex items-center">
+                <h3 className="text-xl font-normal text-[#0C2340] mb-3 font-heading leading-tight min-h-[56px] flex items-center">
                   {service.title}
                 </h3>
-                <p className="text-[#0FA3B1] text-sm leading-relaxed mb-6 font-sans">
+                <p className="text-[#475569] text-sm leading-relaxed mb-6 font-sans">
                   {service.desc}
                 </p>
 
                 {/* Points */}
                 <div className="space-y-3 mb-8 flex-1">
                   {service.points.map((pt) => (
-                    <div key={pt} className="flex items-start gap-2.5 text-sm text-[#004F95] font-medium">
+                    <div key={pt} className="flex items-start gap-2.5 text-sm text-[#0C2340] font-medium">
                       <div className="w-4 h-4 rounded-full bg-[#C5A880]/15 flex items-center justify-center shrink-0 mt-0.5">
                         <Check className="w-2.5 h-2.5 text-[#C5A880]" />
                       </div>

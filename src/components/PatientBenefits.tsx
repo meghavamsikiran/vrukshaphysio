@@ -53,10 +53,10 @@ export default function PatientBenefits() {
   };
 
   return (
-    <section id="benefits" className="py-20 md:py-28 bg-gradient-to-b from-[#F4F9FC] to-white border-t border-[#E2EDF3]" ref={ref}>
+    <section id="benefits" className="py-20 md:py-28 bg-gradient-to-b from-[#F8FAFC] to-white border-t border-[#E2E8F0]" ref={ref}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <span className="inline-block px-4 py-1.5 bg-[#008BA3]/5 text-[#008BA3] rounded-full text-xs font-bold uppercase tracking-widest font-sans mb-4">
+          <span className="inline-block px-4 py-1.5 bg-[#0D9488]/5 text-[#0D9488] rounded-full text-xs font-bold uppercase tracking-widest font-sans mb-4">
             Patient Advantages
           </span>
           <h2 className="section-title teal-underline-center">Benefits of Home Physiotherapy</h2>
@@ -77,15 +77,15 @@ export default function PatientBenefits() {
               <motion.div
                 key={b.title}
                 variants={itemVariants}
-                className="bg-white rounded-3xl p-8 border border-[#E2EDF3] hover:border-[#C5A880] transition-all duration-300 flex flex-col items-start group shadow-sm hover:shadow-md"
+                className="bg-white rounded-3xl p-8 border border-[#E2E8F0] hover:border-[#C5A880] transition-all duration-300 flex flex-col items-start group shadow-sm hover:shadow-md"
               >
                 <div className="w-12 h-12 rounded-xl bg-[#C5A880]/15 flex items-center justify-center text-[#C5A880] mb-6 group-hover:scale-105 transition-transform duration-300">
                   <IconComponent className="w-5 h-5" />
                 </div>
-                <h3 className="text-lg font-normal text-[#004F95] mb-3 font-heading">
+                <h3 className="text-lg font-normal text-[#0C2340] mb-3 font-heading">
                   {b.title}
                 </h3>
-                <p className="text-[#0FA3B1] text-sm leading-relaxed font-sans">
+                <p className="text-[#475569] text-sm leading-relaxed font-sans">
                   {b.desc}
                 </p>
               </motion.div>

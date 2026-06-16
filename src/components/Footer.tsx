@@ -37,7 +37,7 @@ export default function Footer() {
   };
 
   return (
-    <footer className="bg-[#004F95] text-white relative">
+    <footer className="bg-[#0C2340] text-white relative">
       {/* Wave separator */}
       <div className="absolute top-0 left-0 right-0 overflow-hidden leading-none -translate-y-[1px]">
         <svg
@@ -48,7 +48,7 @@ export default function Footer() {
         >
           <path
             d="M0 22L48 19.3C96 16.7 192 11.3 288 11C384 10.7 480 15.3 576 19.8C672 24.3 768 28.7 864 27.5C960 26.3 1056 19.7 1152 16.5C1248 13.3 1344 13.7 1392 13.8L1440 14V54H1392C1344 54 1248 54 1152 54C1056 54 960 54 864 54C768 54 672 54 576 54C480 54 384 54 288 54C192 54 96 54 48 54H0V22Z"
-            fill="#004F95"
+            fill="#0C2340"
           />
         </svg>
       </div>
@@ -86,7 +86,7 @@ export default function Footer() {
               </a>
               <a
                 href={CALL_URL}
-                className="w-10 h-10 rounded-lg bg-[#C5A880]/10 flex items-center justify-center text-[#C5A880] hover:bg-[#C5A880] hover:text-[#004F95] transition-all duration-300"
+                className="w-10 h-10 rounded-lg bg-[#C5A880]/10 flex items-center justify-center text-[#C5A880] hover:bg-[#C5A880] hover:text-[#0C2340] transition-all duration-300"
                 aria-label="Call"
               >
                 <Phone className="w-5 h-5" />
@@ -190,7 +190,7 @@ export default function Footer() {
       {showScrollTop && (
         <button
           onClick={scrollToTop}
-          className="fixed bottom-6 left-6 z-40 w-12 h-12 rounded-full bg-[#C5A880] text-[#004F95] shadow-lg flex items-center justify-center hover:bg-white transition-all duration-300 hover:scale-110"
+          className="fixed bottom-6 left-6 z-40 w-12 h-12 rounded-full bg-[#C5A880] text-[#0C2340] shadow-lg flex items-center justify-center hover:bg-white transition-all duration-300 hover:scale-110"
           aria-label="Scroll to top"
         >
           <ArrowUp className="w-5 h-5" />

@@ -1,15 +1,15 @@
 @import "tailwindcss";
 
 @theme {
-  --color-primary: #004F95;
-  --color-primary-light: #004F95/10;
-  --color-secondary: #008BA3;
+  --color-primary: #0C2340;
+  --color-primary-light: #0C2340/10;
+  --color-secondary: #0D9488;
   --color-accent: #C5A880;
-  --color-sage: #0FA3B1;
-  --color-champagne: #F4F9FC;
-  --color-cream-dark: #E2EDF3;
-  --color-dark: #004F95;
-  --color-light: #F4F9FC;
+  --color-sage: #008BA3;
+  --color-champagne: #F8FAFC;
+  --color-cream-dark: #E2E8F0;
+  --color-dark: #1E293B;
+  --color-light: #FFFFFF;
   --color-success: #10B981;
   --color-whatsapp: #25D366;
 
@@ -57,8 +57,8 @@ html {
 }
 
 body {
-  background: #F4F9FC;
-  color: #004F95;
+  background: #FFFFFF;
+  color: #1E293B;
   font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
   overflow-x: hidden;
 }
@@ -69,7 +69,7 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background: #F4F9FC;
+  background: #F8FAFC;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -109,7 +109,7 @@ body {
   font-weight: 700;
   font-size: 2.5rem;
   line-height: 1.2;
-  color: #004F95;
+  color: #0C2340;
 }
 
 @media (min-width: 768px) {
@@ -120,7 +120,7 @@ body {
 
 .section-subtitle {
   font-size: 1.125rem;
-  color: #0FA3B1;
+  color: #475569;
   max-width: 640px;
   margin: 0 auto;
   line-height: 1.75;
@@ -128,7 +128,7 @@ body {
 
 /* Gradient text */
 .gradient-text {
-  background: linear-gradient(135deg, #004F95, #008BA3, #0FA3B1);
+  background: linear-gradient(135deg, #0C2340, #0D9488, #008BA3);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -147,7 +147,7 @@ body {
   display: block;
   width: 80px;
   height: 3px;
-  background: linear-gradient(to right, #004F95, #C5A880);
+  background: linear-gradient(to right, #0C2340, #C5A880);
   border-radius: 2px;
   margin-top: 16px;
 }
@@ -157,13 +157,13 @@ body {
   display: block;
   width: 80px;
   height: 3px;
-  background: linear-gradient(to right, #004F95, #C5A880);
+  background: linear-gradient(to right, #0C2340, #C5A880);
   border-radius: 2px;
   margin: 16px auto 0;
 }
 
 /* Selection color */
 ::selection {
-  background: rgba(0, 79, 149, 0.15);
-  color: #004F95;
+  background: rgba(12, 35, 64, 0.1);
+  color: #0C2340;
 }
