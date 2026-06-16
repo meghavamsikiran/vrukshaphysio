@@ -57,9 +57,9 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
           {/* Brand */}
           <div className="lg:col-span-1">
-            <div className="flex items-center gap-2 mb-4">
-              <div className="w-10 h-10 rounded-xl bg-white flex items-center justify-center shadow-md shadow-black/5 overflow-hidden">
-                <img src="/images/logo.png" alt="VRUKSHA PHYSIO Logo" className="w-full h-full object-contain p-1" />
+            <div className="flex flex-col items-start gap-3 mb-4">
+              <div className="w-16 h-16 rounded-2xl bg-white flex items-center justify-center shadow-md shadow-black/5 overflow-hidden">
+                <img src="/images/logo.png" alt="VRUKSHA PHYSIO Logo" className="w-full h-full object-contain scale-130" />
               </div>
               <div>
                 <span className="text-xl font-bold text-white font-[family-name:var(--font-outfit)]">
