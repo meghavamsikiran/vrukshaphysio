@@ -146,13 +146,13 @@ export default function About() {
               >
                 <div>
                   {/* Photo */}
-                  <div className="relative h-[360px] overflow-hidden bg-white border-b border-gray-100">
+                  <div className="relative h-[460px] overflow-hidden bg-white border-b border-gray-100">
                     <img
                       src={member.image}
                       alt={`${member.name} (${member.degree})`}
                       className={`w-full h-full object-cover object-top transition-all duration-500 ${
                         member.name.includes('Bramha')
-                          ? 'scale-[1.55] origin-top group-hover:scale-[1.6]'
+                          ? 'scale-[1.25] origin-top group-hover:scale-[1.3]'
                           : 'group-hover:scale-103'
                       }`}
                     />
