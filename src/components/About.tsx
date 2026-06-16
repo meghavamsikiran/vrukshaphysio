@@ -9,6 +9,7 @@ const team = [
     role: 'Founder & Lead Physiotherapist',
     degree: 'BPT',
     location: 'Hyderabad & Andhra Pradesh',
+    useContain: false,
   },
   {
     image: '/images/chinna-nayak.png',
@@ -16,6 +17,7 @@ const team = [
     role: 'Lead Physiotherapist (Bangalore)',
     degree: 'BPT',
     location: 'Bangalore Hub',
+    useContain: true,
   },
 ];
 
@@ -145,23 +147,31 @@ export default function About() {
                 className="bg-[#F8FAFC] border border-gray-100 rounded-3xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 group flex flex-col"
               >
                 {/* Photo */}
-                <div className="relative h-[380px] overflow-hidden bg-gray-50">
+                <div className="relative h-[380px] overflow-hidden bg-white">
                   <img
                     src={member.image}
                     alt={`${member.name} (${member.degree})`}
-                    className="w-full h-full object-cover object-top group-hover:scale-103 transition-all duration-500"
+                    className={`w-full h-full transition-all duration-500 ${
+                      member.useContain
+                        ? 'object-contain bg-white group-hover:scale-102'
+                        : 'object-cover object-top group-hover:scale-103'
+                    }`}
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent"></div>
-                  {/* Name overlay */}
-                  <div className="absolute bottom-5 left-5 right-5 text-white">
-                    <span className="bg-[#0E7490] text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">
-                      {member.degree}
-                    </span>
-                    <h4 className="text-xl font-bold font-[family-name:var(--font-outfit)] mt-2">
-                      {member.name}
-                    </h4>
-                    <p className="text-xs text-gray-200 mt-1">{member.role}</p>
-                  </div>
+                  {!member.useContain && (
+                    <>
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent"></div>
+                      {/* Name overlay */}
+                      <div className="absolute bottom-5 left-5 right-5 text-white">
+                        <span className="bg-[#0E7490] text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">
+                          {member.degree}
+                        </span>
+                        <h4 className="text-xl font-bold font-[family-name:var(--font-outfit)] mt-2">
+                          {member.name}
+                        </h4>
+                        <p className="text-xs text-gray-200 mt-1">{member.role}</p>
+                      </div>
+                    </>
+                  )}
                 </div>
                 
                 {/* Meta details */}
