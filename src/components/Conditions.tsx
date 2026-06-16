@@ -1,7 +1,5 @@
 import { useState } from 'react';
-import { Bone, Brain, CheckCircle2, ChevronDown, ChevronUp, MessageCircle } from 'lucide-react';
-
-const WHATSAPP_URL = 'https://wa.me/919381682898';
+import { Bone, Brain, CheckCircle2, ChevronDown, ChevronUp } from 'lucide-react';
 
 const orthoConditions = [
   'Degenerative Joint Diseases',
@@ -105,17 +103,6 @@ export default function Conditions() {
               )}
             </div>
 
-            <div>
-              <a
-                href={WHATSAPP_URL}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-full inline-flex items-center justify-center gap-2 px-6 py-3.5 bg-[#25D366] text-white rounded-full font-bold hover:bg-[#128C7E] transition-all duration-300 shadow-md shadow-green-500/10 hover:shadow-lg hover:shadow-green-500/20"
-              >
-                <MessageCircle className="w-5 h-5" />
-                Consult Ortho Expert
-              </a>
-            </div>
           </div>
 
           {/* Neuro Card */}

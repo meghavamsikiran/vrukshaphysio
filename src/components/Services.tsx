@@ -19,16 +19,19 @@ const services = [
   },
   {
     image: '/images/orthopedic.png',
-    title: 'Orthopedic Physiotherapy',
-    desc: 'Expert treatment for musculoskeletal conditions, joint dysfunctions, and bone-related injuries.',
+    title: 'Post Surgical Orthopedic Physiotherapy',
+    desc: 'Expert post-surgical rehabilitation and physical therapy designed to restore function, strength, and mobility after orthopedic surgeries.',
     points: [
-      'Post Surgical Rehabilitation (ACL, PCL, Meniscus, etc.)',
-      'Post Joint Replacement (Total Knee & Total Hip)',
-      'Joint Pain Management & Arthritis Care',
-      'Back & Neck Pain Therapy',
-      'Ligament Sprains & Muscle Strains'
+      'Total Knee Replacement (TKR) & Total Hip Replacement (THR)',
+      'ACL Reconstruction & Meniscus Repair Surgery',
+      'Shoulder Replacement Surgery & Rotator Cuff Repair',
+      'Arthroscopic Knee and Shoulder Surgeries',
+      'Fracture Fixation (Plates, Screws, Rods) & Trauma',
+      'Spine Surgery Rehabilitation',
+      'Ligament, Tendon & Muscle Reconstruction Recovery',
+      'Sports Injury Surgical Rehabilitation'
     ],
-    whatsappUrl: 'https://wa.me/919381682898?text=Hello%20VRUKSHA%20PHYSIO%2C%20I%20would%20like%20to%20book%20a%20home%20visit%20appointment%20for%20Orthopedic%20Physiotherapy%20services.',
+    whatsappUrl: 'https://wa.me/919381682898?text=Hello%20VRUKSHA%20PHYSIO%2C%20I%20would%20like%20to%20book%20a%20home%20visit%20appointment%20for%20Post%20Surgical%20Orthopedic%20Physiotherapy%20services.',
   },
   {
     image: '/images/neuro.png',
@@ -68,6 +71,22 @@ const services = [
       'Dynamic Movement Screening'
     ],
     whatsappUrl: 'https://wa.me/919381682898?text=Hello%20VRUKSHA%20PHYSIO%2C%20I%20would%20like%20to%20book%20a%20home%20visit%20appointment%20for%20Sports%20Physiotherapy%20services.',
+  },
+  {
+    image: '/images/pediatric.png',
+    title: 'Pediatric Physiotherapy',
+    desc: 'Our pediatric physiotherapy services focus on helping infants, children, and adolescents achieve their optimal physical development and functional independence.',
+    points: [
+      'Developmental Delay & Milestones',
+      'Cerebral Palsy & Down Syndrome',
+      'Autism Spectrum Disorder (ASD)',
+      'Muscular Dystrophy & Hypotonia',
+      'Torticollis & Toe Walking',
+      'Spina Bifida & Deformities',
+      'Balance, Coordination & Sports Injuries',
+      'Post-Surgical Pediatric Rehab'
+    ],
+    whatsappUrl: 'https://wa.me/919381682898?text=Hello%20VRUKSHA%20PHYSIO%2C%20I%20would%20like%20to%20book%20a%20home%20visit%20appointment%20for%20Pediatric%20Physiotherapy%20services.',
   },
 ];
 
