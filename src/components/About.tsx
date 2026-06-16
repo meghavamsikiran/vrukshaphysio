@@ -2,64 +2,33 @@ import { Award, Users, MapPin, MessageCircle } from 'lucide-react';
 
 const WHATSAPP_URL = 'https://wa.me/919381682898';
 
+const team = [
+  {
+    image: '/images/bramha-reddy.jpg',
+    name: 'Bramha Reddy Gadikota',
+    role: 'Founder & Lead Physiotherapist',
+    degree: 'BPT',
+    location: 'Hyderabad & Andhra Pradesh',
+  },
+  {
+    image: '/images/chinna-nayak.png',
+    name: 'Chinna Nayak',
+    role: 'Lead Physiotherapist (Bangalore)',
+    degree: 'BPT',
+    location: 'Bangalore Hub',
+  },
+];
+
 export default function About() {
   return (
     <section id="about" className="py-20 md:py-28 bg-white overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
-          {/* Images Section */}
-          <div className="lg:col-span-6 space-y-6">
-            {/* Main Founder Card */}
-            <div className="relative">
-              {/* Decorative Frame */}
-              <div className="absolute -inset-4 rounded-3xl bg-gradient-to-tr from-[#0E7490] to-[#14B8A6] opacity-10 blur-lg"></div>
-
-              <div className="relative rounded-3xl overflow-hidden shadow-2xl border border-gray-100">
-                <img
-                  src="/images/bramha-reddy.jpg"
-                  alt="Bramha Reddy Gadikota - Founder & Lead Physiotherapist"
-                  className="w-full h-[450px] md:h-[520px] object-cover object-top hover:scale-102 transition-transform duration-500"
-                />
-
-                {/* Glass Badge */}
-                <div className="absolute bottom-6 left-6 right-6 p-4 rounded-2xl bg-black/40 backdrop-blur-md border border-white/20 text-white">
-                  <h4 className="text-xl font-bold font-[family-name:var(--font-outfit)]">
-                    Bramha Reddy Gadikota
-                  </h4>
-                  <p className="text-sm text-gray-200 font-medium">BPT | Founder & Lead Physiotherapist</p>
-                </div>
-              </div>
-            </div>
-
-            {/* Equipment Showcase */}
-            <div className="grid grid-cols-2 gap-4">
-              <div className="relative rounded-2xl overflow-hidden shadow-md border border-gray-100 h-36 bg-[#F8FAFC]">
-                <img
-                  src="/images/equipment-1.png"
-                  alt="Electro Therapeutic Devices"
-                  className="w-full h-full object-cover"
-                />
-                <div className="absolute inset-0 bg-black/30 flex items-end p-3">
-                  <span className="text-xs text-white font-semibold">Electro Therapeutic Devices</span>
-                </div>
-              </div>
-              <div className="relative rounded-2xl overflow-hidden shadow-md border border-gray-100 h-36 bg-[#F8FAFC]">
-                <img
-                  src="/images/equipment-2.png"
-                  alt="Electro Therapeutic Devices"
-                  className="w-full h-full object-cover"
-                />
-                <div className="absolute inset-0 bg-black/30 flex items-end p-3">
-                  <span className="text-xs text-white font-semibold">Electro Therapeutic Devices</span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* Content Section */}
-          <div className="lg:col-span-6">
+        {/* Top Split Area: Content and Equipment */}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center mb-20">
+          {/* Content Area */}
+          <div className="lg:col-span-7">
             <span className="inline-block px-4 py-1.5 bg-[#0E7490]/10 text-[#0E7490] rounded-full text-sm font-semibold mb-4 tracking-wide uppercase">
-              Meet the Founder
+              Who We Are
             </span>
             <h2 className="section-title text-[#0F172A] teal-underline">
               About VRUKSHA PHYSIO
@@ -118,6 +87,90 @@ export default function About() {
                 Book a Consultation
               </a>
             </div>
+          </div>
+
+          {/* Equipment Showcase Area */}
+          <div className="lg:col-span-5 space-y-6">
+            <div className="relative">
+              <div className="absolute -inset-4 rounded-3xl bg-gradient-to-tr from-[#0E7490] to-[#14B8A6] opacity-5 blur-lg"></div>
+              <div className="relative bg-[#F8FAFC] border border-gray-100 rounded-3xl p-6 shadow-xl">
+                <h3 className="text-lg font-bold text-[#0F172A] mb-4 font-[family-name:var(--font-outfit)] border-b border-gray-200/60 pb-3">
+                  Electro Therapeutic Modalities
+                </h3>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <div className="relative rounded-2xl overflow-hidden shadow-md h-36 bg-white border border-gray-100 group">
+                    <img
+                      src="/images/equipment-1.png"
+                      alt="Electro Therapeutic Device - Multi-Stim"
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    />
+                    <div className="absolute inset-0 bg-black/40 flex items-end p-3">
+                      <span className="text-xs text-white font-semibold">Electro Therapeutic Devices</span>
+                    </div>
+                  </div>
+                  <div className="relative rounded-2xl overflow-hidden shadow-md h-36 bg-white border border-gray-100 group">
+                    <img
+                      src="/images/equipment-2.png"
+                      alt="Electro Therapeutic Device - Ultrasound"
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    />
+                    <div className="absolute inset-0 bg-black/40 flex items-end p-3">
+                      <span className="text-xs text-white font-semibold">Electro Therapeutic Devices</span>
+                    </div>
+                  </div>
+                </div>
+                <p className="text-xs text-gray-500 mt-4 leading-relaxed">
+                  We use advanced electro-therapeutic modalities to target deep tissues, accelerate recovery, and provide immediate pain relief.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Team Sub-Section */}
+        <div className="border-t border-gray-100 pt-16">
+          <div className="text-center mb-12">
+            <span className="inline-block px-4 py-1.5 bg-[#14B8A6]/10 text-[#14B8A6] rounded-full text-sm font-semibold mb-3 tracking-wide uppercase">
+              Our Clinical Leadership
+            </span>
+            <h3 className="text-2xl md:text-4xl font-bold font-[family-name:var(--font-outfit)] text-[#0F172A]">
+              Meet Our Expert Physiotherapists
+            </h3>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            {team.map((member) => (
+              <div
+                key={member.name}
+                className="bg-[#F8FAFC] border border-gray-100 rounded-3xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 group flex flex-col"
+              >
+                {/* Photo */}
+                <div className="relative h-[380px] overflow-hidden bg-gray-50">
+                  <img
+                    src={member.image}
+                    alt={`${member.name} (${member.degree})`}
+                    className="w-full h-full object-cover object-top group-hover:scale-103 transition-all duration-500"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent"></div>
+                  {/* Name overlay */}
+                  <div className="absolute bottom-5 left-5 right-5 text-white">
+                    <span className="bg-[#0E7490] text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">
+                      {member.degree}
+                    </span>
+                    <h4 className="text-xl font-bold font-[family-name:var(--font-outfit)] mt-2">
+                      {member.name}
+                    </h4>
+                    <p className="text-xs text-gray-200 mt-1">{member.role}</p>
+                  </div>
+                </div>
+                
+                {/* Meta details */}
+                <div className="p-5 flex items-center gap-2 text-[#0E7490] font-semibold text-sm bg-white border-t border-gray-100">
+                  <MapPin className="w-4 h-4 shrink-0 text-[#14B8A6]" />
+                  <span>Coverage: {member.location}</span>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </div>
